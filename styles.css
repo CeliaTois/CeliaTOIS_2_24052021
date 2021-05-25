@@ -1,0 +1,11 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2 {
+    font-weight: bolder;
+}
+
+ul {
+    list-style-type: none;
+}
