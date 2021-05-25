@@ -1,11 +1,129 @@
 body {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
-h1, h2 {
-    font-weight: bolder;
+.logo {
+    width: 100px;
+    margin: 30px 20px;
+}
+
+/* Navigation */
+
+#navigation {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    
+}
+
+.navigation__accommodations, .navigation__activities {
+    border-bottom: 4px #F2F2F2 solid;
+    box-sizing: 50%;
+}
+
+.navigation__sign-up, .stars {
+    font-weight: bold;
+    color: #0065FC;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
 }
 
 ul {
     list-style-type: none;
+}
+
+
+h1, h2, h3 {
+    font-weight: bolder;
+}
+
+.search-bar {
+    border: 1px #F2F2F2 solid;
+}    
+    
+.search-bar__map-marker, #accommodations__popular, footer {
+    background-color: #F2F2F2;
+}
+
+#accommodations__popular, #accommodations__marseille, #activities, footer {
+    padding: 40px 5%;
+}
+
+
+input{
+    border: none;
+}
+
+div {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#accommodations__popular div {
+    background-color: #FFF;
+    border: 1px #FFF solid;
+    padding: 5px;
+    height: 140px;
+}
+
+#accommodations__popular img, #accommodations__marseille img, #activities img {
+    object-fit: cover;
+}
+
+#accommodations__popular img {
+    width: 125px;
+    height: 140px;
+    float: left;
+    margin-right: 20px;
+}
+
+#accommodations__popular div, #accommodations__marseille div, #activities div {
+    border-radius: 15px;
+}
+    
+#accommodations__popular img {
+     border-top-left-radius: 15px;
+     border-bottom-left-radius: 15px;
+}
+
+#accommodations__marseille div, #activities div {
+    border: 1px #F2F2F2 solid;
+    box-shadow: 0 0 20px #F2F2F2;  
+}
+
+#accommodations__marseille div {
+    height: 220px;
+    padding: 5px;  
+}
+
+#accommodations__marseille img, #activities img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 120px;
+}
+
+#accommodations__marseille h3, #accommodations__marseille p, #accommodations__marseille i {
+    margin: 5px 0;
+}
+
+#accommodations__marseille h3, #accommodations__marseille p {
+    padding: 0 10px;
+}
+
+#accommodations__marseille i {
+    padding: 0;
+}
+
+.empty-stars {
+    color: #F2F2F2;
+}
+
+#activities div {
+    height: 190px;
 }
