@@ -1,26 +1,42 @@
 body {
     font-family: 'Raleway', sans-serif;
+    font-size: 16px;
     margin: 0;
 }
 
 .logo {
     width: 100px;
-    margin: 30px 20px;
+    padding: 30px 20px;
+    float: left;
 }
 
 /* Navigation */
-
 #navigation {
-    font-size: 20px;
     display: flex;
-    flex-wrap: wrap-reverse;
-    
+    flex-direction: row;
+    clear: left;
 }
 
 .navigation__accommodations, .navigation__activities {
     border-bottom: 4px #F2F2F2 solid;
-    box-sizing: 50%;
+    width: 50%;
+    height: 35px;
+    text-align: center;
 }
+
+.navigation__accommodations {
+    border-bottom: 4px #0065FC solid;
+}
+
+.navigation__accommodations a{
+    color: #0065FC;
+}
+
+.navigation__sign-up { /* Position of "S'inscrire" */
+    position: absolute;
+    top: 44px;
+    right: 20px;
+}  
 
 .navigation__sign-up, .stars {
     font-weight: bold;
@@ -28,24 +44,79 @@ body {
 }
 
 nav a {
-    text-decoration: none;
+    text-decoration: none; /* Remove the underline */ 
     color: #000;
 }
 
-ul {
+ul { /* Remove the browser css prefilled */
     list-style-type: none;
+    padding-inline-start: 0;
+    margin: 0;
 }
 
 
 h1, h2, h3 {
-    font-weight: bolder;
+    font-weight: bold;
+}
+
+/* Section 1 Search */
+#search {
+    padding: 12px 20px 0 20px;
+}
+
+h1 {
+    font-size: 22px;
 }
 
 .search-bar {
+    margin-top: 15px;
+    display: inline-flex;
+    flex-grow: 1;
     border: 1px #F2F2F2 solid;
-}    
-    
-.search-bar__map-marker, #accommodations__popular, footer {
+}
+
+.search-bar__input {
+    outline: none;
+    border: none;
+    padding: 0 2px;
+}
+
+.search-bar__input::placeholder {
+    font-family: Raleway;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.search-bar__map-marker {
+    border: 1px #F2F2F2 solid;
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.search-bar__map-marker, .search-bar__button {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar__button {
+    background-color: #0065FC;
+    color: #FFF;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar, div {
+    width: 100%;
+}
+
+#accommodations__popular, footer {
     background-color: #F2F2F2;
 }
 
@@ -53,13 +124,7 @@ h1, h2, h3 {
     padding: 40px 5%;
 }
 
-
-input{
-    border: none;
-}
-
 div {
-    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -81,7 +146,7 @@ div {
     margin-right: 20px;
 }
 
-#accommodations__popular div, #accommodations__marseille div, #activities div {
+.search-bar, .search-bar__button, #accommodations__popular div, #accommodations__marseille div, #activities div {
     border-radius: 15px;
 }
     

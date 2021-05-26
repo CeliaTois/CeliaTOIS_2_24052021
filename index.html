@@ -3,6 +3,7 @@
 
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reservia</title>
         <link rel="stylesheet" href="styles.css"/>
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
@@ -32,9 +33,13 @@
 
             <!-- Search bar -->
             <div class="search-bar">
-                <i class="fas fa-map-marker-alt search-bar__map-marker"></i>
-                <input type="search" placeholder="Marseille, France"/>
-                <p>Rechercher</p> 
+                <div class="search-bar__map-marker">
+                    <i class="fas fa-map-marker-alt fa-lg"></i>
+                </div>
+                <input type="text" class="search-bar__input" placeholder="Marseille, France"/>
+                <button type="submit" class="search-bar__button">
+                    <i class="fas fa-search fa-lg"></i>
+                </button>       
             </div>
 
             <!-- Search filters -->
