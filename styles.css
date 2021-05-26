@@ -149,7 +149,7 @@ h1 {
     background-color: #F2F2F2;
 }
 
-#accommodations__popular, #accommodations__marseille, #activities, footer {
+#accommodations__popular, #accommodations__marseille, #activities {
     padding: 40px 5%;
 }
 
@@ -220,4 +220,22 @@ div {
 
 #activities div {
     height: 190px;
+}
+
+
+/* Footer */
+footer {
+    padding: 10px 5%;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+footer li {
+    margin: 14px 0;
+}
+
+footer div {
+    margin: 40px 0;
 }
