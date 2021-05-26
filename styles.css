@@ -68,34 +68,37 @@ h1 {
     font-size: 22px;
 }
 
-.search-bar {
-    margin-top: 15px;
-    display: inline-flex;
-    flex-grow: 1;
+.search__bar {
     border: 1px #F2F2F2 solid;
 }
 
-.search-bar__input {
+.search__bar, .search__filters li {
+    margin-top: 15px;
+    display: inline-flex;
+    flex-grow: 1;
+}
+
+.search__bar__input {
     outline: none;
     border: none;
     padding: 0 2px;
 }
 
-.search-bar__input::placeholder {
+.search__bar__input::placeholder {
     font-family: Raleway;
     color: #000;
     font-weight: bold;
     font-size: 16px;
 }
 
-.search-bar__map-marker {
+.search__bar__map-marker {
     border: 1px #F2F2F2 solid;
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 
-.search-bar__map-marker, .search-bar__button {
+.search__bar__map-marker, .search__bar__button, .search__filters i {
     width: 50px;
     height: 50px;
     margin: 0;
@@ -104,7 +107,7 @@ h1 {
     justify-content: center;
 }
 
-.search-bar__button {
+.search__bar__button {
     background-color: #0065FC;
     color: #FFF;
     outline: none;
@@ -112,8 +115,34 @@ h1 {
     cursor: pointer;
 }
 
-.search-bar, div {
+.search__bar, div {
     width: 100%;
+}
+
+.search__filters li {
+    font-weight: bold;
+    border: 2px #F2F2F2 solid;
+    align-items: center;
+}
+
+.search__filters i {
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
+
+.search__filters p {
+    padding: 0 15px;
+}
+
+.search__filters li, .search__filters i {
+    border-radius: 30px;
+}
+
+.info {
+    border: 2px #F2F2F2 solid;
+    border-radius: 30px;
+    padding:6px 10px;
+    color: #0065FC;
 }
 
 #accommodations__popular, footer {
@@ -146,7 +175,7 @@ div {
     margin-right: 20px;
 }
 
-.search-bar, .search-bar__button, #accommodations__popular div, #accommodations__marseille div, #activities div {
+.search__bar, .search__bar__button, #accommodations__popular div, #accommodations__marseille div, #activities div {
     border-radius: 15px;
 }
     
