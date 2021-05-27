@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: 'Raleway bold';
-    src: url('fonts/Raleway-Bold.ttf');
+    font-family: 'Raleway extrabold';
+    src: url('fonts/Raleway-ExtraBold.ttf');
 }
 
 body {
@@ -29,7 +29,7 @@ ul {
 
 /* Raleway bold */
 .font-bold { 
-    font-family: 'Raleway bold';
+    font-family: 'Raleway extrabold';
 }
 
 .blue { 
@@ -56,7 +56,7 @@ ul {
 /* Logo Reservia position */
 .logo { 
     width: 100px;
-    padding: 30px 20px;
+    padding: 25px 20px;
     float: left;
 }
 
@@ -69,7 +69,7 @@ ul {
 
 /*Position of navigation's elements "Hébergements" and "Activités" */
 .navigation__accommodations, .navigation__activities { 
-    border-bottom: 4px #F2F2F2 solid;
+    border-bottom: 3.5px #F2F2F2 solid;
     width: 50%;
     height: 35px;
     text-align: center;
@@ -77,13 +77,13 @@ ul {
 
 /* Underline the navigation's element "Hébergements" in blue for mobile version */
 .navigation__accommodations {
-    border-bottom: 4px #0065FC solid; 
+    border-bottom: 3.5px #0065FC solid; 
 }
 
 /* Position of "S'inscrire" */
 .navigation__sign-up { 
     position: absolute;
-    top: 44px;
+    top: 39px;
     right: 20px;
 }
 
@@ -91,11 +91,12 @@ ul {
 /* ---------------- */
 /* Section 1 position */
 #search {
-    padding: 12px 20px 0 20px;
+    padding: 10px 20px 0 20px;
 }
 
 h1 {
     font-size: 22px;
+    margin: 18px 0 10px 0;
 }
 
 /* Search bar and Search filters position */
@@ -104,11 +105,12 @@ h1 {
     display: inline-flex;
 }
 
-/* Remove the browser's default values for input + position */
+/* Remove the browser's default values for input + position + size */
 .search__bar__input {
     outline: none;
     border: none;
-    padding: 0 2px;
+    padding: 0 70px;
+    height: 50px;
 }
 
 /* Font style of input and input's placeholder */
@@ -119,23 +121,40 @@ h1 {
     font-size: 16px;
 }
 
-/* Icons' position and size */
+/* Icons' position */
 .search__bar__map-marker, .search__bar__button, .search__filters i {
-    width: 50px;
-    height: 50px;
-    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;    
 }
 
-/* Button's color */
+/* Search bar icons size */
+.search__bar__map-marker, .search__bar__button {
+    width: 52px;
+    height: 52px;
+    font-size: 14px;
+}
+
+.search__bar__map-marker {
+    margin-top: -1px;
+    margin-left: -2px;
+}
+
+/* Button's color + position */
 .search__bar__button {
     background-color: #0065FC;
     color: #FFF;
     outline: none;
     border: none;
     cursor: pointer;
+    right: 19px;
+    margin-top: -1px;
+}
+
+/* Button's icon size */*
+.search__bar__button i {
+    font-size: 17px;
 }
 
 /* Elements that take the entire width of the screen */
@@ -143,17 +162,30 @@ h1 {
     width: 100%;
 }
 
-.search__filters li {
-    border: 2px #F2F2F2 solid;
-    align-items: center;
+/* Margin between the search bar and the h2 "Filtres" */
+.search__filters h2 {
+    margin: 22px 0 0 0;
 }
 
+.search__filters li {
+    border: 2px #D9D9D9 solid; /* Filters borders -> darker grey */
+    align-items: center;
+    position: relative;
+    margin-right: 7px;
+}
+
+/* Filters icons size */
 .search__filters i {
     background-color: #DEEBFF;
+    margin-left: -3px;
+    width: 48px;
+    height: 48px;
 }
 
+/* Filters' name position */
 .search__filters p {
-    padding: 0 15px;
+    padding: 0 15px 0 60px;
+    margin: 12px 0;
 }
 
 .search__filters li, .search__filters i {
@@ -161,14 +193,20 @@ h1 {
 }
 
 /* Information icon borders */
-.info {
-    border: 2px #F2F2F2 solid;
+.search__filters__info__icon {
+    border: 1px #D9D9D9 solid;
     border-radius: 30px;
-    padding:6px 10px;
+    padding: 5px 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.search__filters__info i {
+    font-size: 10px;
 }
 
 #accommodations__popular, #accommodations__marseille, #activities {
-    padding: 40px 5%;
+    padding: 40px 20px;
 }
 
 div {
@@ -237,7 +275,7 @@ div {
 
 /* Footer */
 footer {
-    padding: 10px 5%;
+    padding: 10px 20px;
 }
 
 h2 {
