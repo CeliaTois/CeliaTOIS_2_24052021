@@ -89,7 +89,7 @@ ul {
 
 /* Section 1 Search */
 /* ---------------- */
-/* Section 1 position */
+/* Position of section 1 */
 #search {
     padding: 10px 20px 0 20px;
 }
@@ -97,6 +97,10 @@ ul {
 h1 {
     font-size: 22px;
     margin: 18px 0 10px 0;
+}
+
+.search__bar, .search__bar__button {
+    border-radius: 15px;
 }
 
 /* Search bar and Search filters position */
@@ -115,10 +119,9 @@ h1 {
 
 /* Font style of input and input's placeholder */
 .search__bar__input::placeholder, input {
-    font-family: Raleway;
+    font-family: 'Raleway extrabold';
     color: #000;
-    font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* Icons' position */
@@ -188,7 +191,7 @@ h1 {
     margin: 12px 0;
 }
 
-.search__filters li, .search__filters i {
+.search__filters li, .search__filters i, .search__info__icon {
     border-radius: 30px;
 }
 
@@ -201,10 +204,9 @@ h1 {
 /* Information icon borders */
 .search__info__icon {
     border: 1px #D9D9D9 solid;
-    border-radius: 30px;
-    padding: 6px 9px;
+    padding: 6px 9px; /* Dimension of the circle */
     margin-right: 10px;
-    height: 10px;
+    height: 10px; /* Correct the height modified by flexbox */
 }
 
 .search__info i {
@@ -213,22 +215,44 @@ h1 {
 
 .search__info p {
     width: 100%;
-    margin: 0;
+    margin: 0; /* Remove the browser's default value */
+}
+
+/* Section 2 Accommodations */
+/* ------------------------ */
+.all-edges-rounded {
+    border-radius: 20px;
 }
 
 #accommodations__popular, #accommodations__marseille, #activities {
-    padding: 40px 20px;
+    padding: 40px 20px 30px 20px;
 }
 
 div {
     margin-bottom: 10px;
 }
 
-#accommodations__popular div {
+.accommodations__popular__title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.accommodations__popular__title h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.accommodations__popular__title i {
+    align-self: center; /* Align the icon with the h2 */
+}
+
+.accommodations__popular__block {
     background-color: #FFF;
     border: 1px #FFF solid;
-    padding: 5px;
-    height: 140px;
+    padding: 4px;
+    height: 132px;
+    width: auto;
 }
 
 /* Fit the images inside the boxes */
@@ -237,14 +261,20 @@ div {
 }
 
 #accommodations__popular img {
-    width: 125px;
-    height: 140px;
+    width: 115px;
+    height: 132px;
     float: left;
-    margin-right: 20px;
+    margin-right: 20px; /* Space between the text and the image */
 }
 
-.search__bar, .search__bar__button, #accommodations__popular div, #accommodations__marseille div, #activities div {
-    border-radius: 15px;
+h3 {
+    font-size: 17px;
+    margin: 10px 0 7px 0;
+}
+
+#accommodations__popular p {
+    font-size: 14px;
+    margin: 0 0 35px 0;
 }
 
 #accommodations__marseille div, #activities div {
@@ -289,7 +319,7 @@ footer {
     padding: 10px 20px;
 }
 
-h2 {
+footer h2 {
     font-size: 18px;
 }
 
