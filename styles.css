@@ -192,17 +192,28 @@ h1 {
     border-radius: 30px;
 }
 
-/* Information icon borders */
-.search__filters__info__icon {
-    border: 1px #D9D9D9 solid;
-    border-radius: 30px;
-    padding: 5px 8px;
+.search__info {
+    margin: 35px 0;
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
 }
 
-.search__filters__info i {
-    font-size: 10px;
+/* Information icon borders */
+.search__info__icon {
+    border: 1px #D9D9D9 solid;
+    border-radius: 30px;
+    padding: 6px 9px;
+    margin-right: 10px;
+    height: 10px;
+}
+
+.search__info i {
+    font-size: 11px;
+}
+
+.search__info p {
+    width: 100%;
+    margin: 0;
 }
 
 #accommodations__popular, #accommodations__marseille, #activities {
