@@ -1,65 +1,95 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway bold';
+    src: url('fonts/Raleway-Bold.ttf');
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    margin: 0; /* Remove the browser's default values */
+}
+
+/* Remove the browser's default values for links */
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Remove the browser's default values for lists */
+ul { 
+    list-style-type: none;
+    padding-inline-start: 0;
     margin: 0;
 }
 
-.logo {
+/* Raleway bold */
+.font-bold { 
+    font-family: 'Raleway bold';
+}
+
+.blue { 
+    color: #0065FC;
+}
+
+/* Border of : .search-bar, .accommodations__marseille div, .activities div */
+.border { 
+    border: 1px #F2F2F2 solid;
+}
+
+.grey-background {
+    background-color: #F2F2F2;
+}
+
+/* Border radius of .accommodations__popular img and .search__bar__map-marker */
+.rounded-left-edges {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/* Header */
+/* ------ */
+/* Logo Reservia position */
+.logo { 
     width: 100px;
     padding: 30px 20px;
     float: left;
 }
 
-/* Navigation */
+/* Navigation's menu position */
 #navigation {
     display: flex;
     flex-direction: row;
     clear: left;
 }
 
-.navigation__accommodations, .navigation__activities {
+/*Position of navigation's elements "Hébergements" and "Activités" */
+.navigation__accommodations, .navigation__activities { 
     border-bottom: 4px #F2F2F2 solid;
     width: 50%;
     height: 35px;
     text-align: center;
 }
 
+/* Underline the navigation's element "Hébergements" in blue for mobile version */
 .navigation__accommodations {
-    border-bottom: 4px #0065FC solid;
+    border-bottom: 4px #0065FC solid; 
 }
 
-.navigation__accommodations a{
-    color: #0065FC;
-}
-
-.navigation__sign-up { /* Position of "S'inscrire" */
+/* Position of "S'inscrire" */
+.navigation__sign-up { 
     position: absolute;
     top: 44px;
     right: 20px;
-}  
-
-.navigation__sign-up, .stars {
-    font-weight: bold;
-    color: #0065FC;
-}
-
-nav a {
-    text-decoration: none; /* Remove the underline */ 
-    color: #000;
-}
-
-ul { /* Remove the browser css prefilled */
-    list-style-type: none;
-    padding-inline-start: 0;
-    margin: 0;
-}
-
-
-h1, h2, h3 {
-    font-weight: bold;
 }
 
 /* Section 1 Search */
+/* ---------------- */
+/* Section 1 position */
 #search {
     padding: 12px 20px 0 20px;
 }
@@ -68,36 +98,28 @@ h1 {
     font-size: 22px;
 }
 
-.search__bar {
-    border: 1px #F2F2F2 solid;
-}
-
+/* Search bar and Search filters position */
 .search__bar, .search__filters li {
     margin-top: 15px;
     display: inline-flex;
-    flex-grow: 1;
 }
 
+/* Remove the browser's default values for input + position */
 .search__bar__input {
     outline: none;
     border: none;
     padding: 0 2px;
 }
 
-.search__bar__input::placeholder {
+/* Font style of input and input's placeholder */
+.search__bar__input::placeholder, input {
     font-family: Raleway;
     color: #000;
     font-weight: bold;
     font-size: 16px;
 }
 
-.search__bar__map-marker {
-    border: 1px #F2F2F2 solid;
-    background-color: #F2F2F2;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
+/* Icons' position and size */
 .search__bar__map-marker, .search__bar__button, .search__filters i {
     width: 50px;
     height: 50px;
@@ -107,6 +129,7 @@ h1 {
     justify-content: center;
 }
 
+/* Button's color */
 .search__bar__button {
     background-color: #0065FC;
     color: #FFF;
@@ -115,19 +138,18 @@ h1 {
     cursor: pointer;
 }
 
-.search__bar, div {
+/* Elements that take the entire width of the screen */
+.full-width {
     width: 100%;
 }
 
 .search__filters li {
-    font-weight: bold;
     border: 2px #F2F2F2 solid;
     align-items: center;
 }
 
 .search__filters i {
     background-color: #DEEBFF;
-    color: #0065FC;
 }
 
 .search__filters p {
@@ -138,15 +160,11 @@ h1 {
     border-radius: 30px;
 }
 
+/* Information icon borders */
 .info {
     border: 2px #F2F2F2 solid;
     border-radius: 30px;
     padding:6px 10px;
-    color: #0065FC;
-}
-
-#accommodations__popular, footer {
-    background-color: #F2F2F2;
 }
 
 #accommodations__popular, #accommodations__marseille, #activities {
@@ -164,6 +182,7 @@ div {
     height: 140px;
 }
 
+/* Fit the images inside the boxes */
 #accommodations__popular img, #accommodations__marseille img, #activities img {
     object-fit: cover;
 }
@@ -178,14 +197,8 @@ div {
 .search__bar, .search__bar__button, #accommodations__popular div, #accommodations__marseille div, #activities div {
     border-radius: 15px;
 }
-    
-#accommodations__popular img {
-     border-top-left-radius: 15px;
-     border-bottom-left-radius: 15px;
-}
 
 #accommodations__marseille div, #activities div {
-    border: 1px #F2F2F2 solid;
     box-shadow: 0 0 20px #F2F2F2;  
 }
 
@@ -198,7 +211,6 @@ div {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-bottom: 5px;
-    width: 100%;
     height: 120px;
 }
 
