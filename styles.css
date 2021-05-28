@@ -1,98 +1,169 @@
-@font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway-Medium.ttf');
-}
+/* -------------- */
+/* General values */
+/* -------------- */
 
-@font-face {
-    font-family: 'Raleway extrabold';
-    src: url('fonts/Raleway-ExtraBold.ttf');
-}
+    @font-face {
+        font-family: 'Raleway';
+        src: url('fonts/Raleway-Medium.ttf');
+    }
 
-body {
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    margin: 0; /* Remove the browser's default values */
-}
+    @font-face {
+        font-family: 'Raleway extrabold';
+        src: url('fonts/Raleway-ExtraBold.ttf');
+    }
 
-/* Remove the browser's default values for links */
-a {
-    text-decoration: none;
-    color: #000;
-}
+    body {
+        font-family: 'Raleway', sans-serif;
+        margin: 0; /* Remove the browser's default values */
+    }
 
-/* Remove the browser's default values for lists */
-ul { 
-    list-style-type: none;
-    padding-inline-start: 0;
-    margin: 0;
-}
+    /* Remove the browser's default values for links */
+    a {
+        text-decoration: none;
+        color: #000;
+    }
 
-/* Raleway bold */
-.font-bold { 
-    font-family: 'Raleway extrabold';
-}
+    /* Remove the browser's default values for lists */
+    ul { 
+        list-style-type: none;
+        padding-inline-start: 0;
+        margin: 0;
+    }
 
-.blue { 
-    color: #0065FC;
-}
+    /* Raleway bold */
+    .font-bold { 
+        font-family: 'Raleway extrabold';
+    }
 
-/* Border of : .search-bar, .accommodations__marseille div */
-.border { 
-    border: 1px #F2F2F2 solid;
-}
+    .blue { 
+        color: #0065FC;
+    }
 
-.grey-background {
-    background-color: #F2F2F2;
-}
+    /* Border of : .search-bar, .accommodations__marseille div */
+    .border { 
+        border: 1px #F2F2F2 solid;
+    }
 
-/* Border radius of .accommodations__popular img and .search__bar__map-marker */
-.rounded-left-edges {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
+    .grey-background {
+        background-color: #F2F2F2;
+    }
 
-/* Header */
-/* ------ */
-/* Logo Reservia position */
-.logo { 
+    /* Border radius of .accommodations__popular img and .search__bar__map-marker */
+    .rounded-left-edges {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    /* ------ */
+    /* Header */
+    /* ------ */
+    /* Logo Reservia position */
+    .logo { 
+        float: left;
+    }
+
+    /* Navigation's menu position */
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        clear: left;
+    }
+
+
+/* -------------------------- */
+/* Values for mobiles < 768px */
+/* -------------------------- */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* ------ */
+    /* Header */
+    /* ------ */
+    /* Logo Reservia position */
+    .logo {
     width: 100px;
     padding: 25px 20px;
-    float: left;
-}
+    }
 
-/* Navigation's menu position */
-#navigation {
-    display: flex;
-    flex-direction: row;
-    clear: left;
-}
-
-/*Position of navigation's elements "Hébergements" and "Activités" */
-.navigation__accommodations, .navigation__activities { 
+    /*Position of navigation's elements "Hébergements" and "Activités" */
+    .navigation__accommodations, .navigation__activities { 
     border-bottom: 3.5px #F2F2F2 solid;
     width: 50%;
     height: 35px;
     text-align: center;
-}
+    }
 
-/* Underline the navigation's element "Hébergements" in blue for mobile version */
-.navigation__accommodations {
-    border-bottom: 3.5px #0065FC solid; 
-}
+    /* Underline the navigation's element "Hébergements" in blue for mobile version */
+    .navigation__accommodations {
+        border-bottom: 3.5px #0065FC solid; 
+    }
 
-/* Position of "S'inscrire" */
-.navigation__sign-up { 
-    position: absolute;
-    top: 39px;
-    right: 20px;
-}
+    /* Position of "S'inscrire" */
+    .navigation__sign-up { 
+        position: absolute;
+        top: 39px;
+        right: 20px;
+    }
 
-/* Section 1 Search */
-/* ---------------- */
-/* Position of section 1 */
-#search {
+    /* ---------------- */
+    /* Section 1 Search */
+    /* ---------------- */
+    /* Position of section 1 */
+    #search {
     padding: 10px 20px 0 20px;
+    }
 }
+
+
+/* -------------------------- */
+/* Values for screens > 992px */
+/* -------------------------- */
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 15px;
+    }
+
+    /* ------ */
+    /* Header */
+    /* ------ */
+    /* Logo Reservia position */
+    .logo {
+        width: 90px;
+        padding: 35px 0 0 45px;
+        }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        padding-right: 24px;
+    }
+
+    /*Position of navigation's elements "Hébergements" and "Activités" */
+    #navigation li{ 
+        padding: 38px 28px 0 28px;
+    }
+
+    /* Underline the navigation's element "Hébergements" in blue for mobile version */
+    .navigation__accommodations {
+        border-top: 3.5px #0065FC solid; 
+    }
+
+    /* ---------------- */
+    /* Section 1 Search */
+    /* ---------------- */
+    /* Position of section 1 */
+    #search {
+        padding: 15px 45px 0 45px;
+        }
+}
+
+
 
 h1 {
     font-size: 22px;
@@ -181,8 +252,13 @@ h1 {
 .search__filters i {
     background-color: #DEEBFF;
     margin-left: -3px;
-    width: 48px;
-    height: 48px;
+    width: 47px;
+    height: 47px;
+}
+
+.search__filters li:hover {
+    border: 2px #DEEBFF solid;
+    background-color: #DEEBFF;
 }
 
 /* Filters' name position */
