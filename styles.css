@@ -39,6 +39,10 @@
         color: #0065FC;
     }
 
+    .empty-stars {
+        color: #F2F2F2;
+    }
+
     /* Border of : .search-bar, .accommodations__marseille div */
     .border { 
         border: 1px #F2F2F2 solid;
@@ -190,6 +194,104 @@
         margin: 0; /* Remove the browser's default value */
     }
 
+    /* ------------------------ */
+    /* Section 2 Accommodations */
+    /* ------------------------ */
+    /* Les plus populaires */
+    /* ------------------- */
+    .accommodations__popular__block {
+        background-color: #FFF;
+        border: 1px #FFF solid;
+        padding: 4px;
+        width: auto;
+        box-shadow: 0 0 20px #D9D9D9;
+    }
+
+    /*  "Les plus populaires"'s images position */ 
+    #accommodations__popular img {
+        float: left;
+        margin-right: 20px; /* Space between the text and the image */
+    }
+
+    .all-edges-rounded {
+        border-radius: 20px;
+    }
+    
+    div {
+        margin-bottom: 10px;
+    }
+
+    .accommodations__popular__title {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .accommodations__popular__title i {
+        align-self: center; /* Align the icon with the h2 */
+    }
+    
+    /* Fit the images inside the boxes */
+    #accommodations__popular img, #accommodations__marseille img, #activities img {
+        object-fit: cover;
+    }
+    
+    #accommodations__popular h3 {
+        margin: 10px 0 7px 0;
+    }
+    
+
+    /* Hébergements à Marseille */
+    /* ------------------------ */
+    .accommodations__marseille__block { /* "Hébergements à Marseille" block dimensions */ 
+        width: auto;
+    }
+    #accommodations__marseille .price, .accommodations__popular .price {
+        font-size: 14px;
+    }
+
+    #accommodations__marseille .price{
+        margin: 3px 0 0 0;
+    }
+
+    #accommodations__marseille h2 {
+        margin-bottom: 16px;
+    }
+    
+    #activities div {
+        box-shadow: 0 0 20px #F2F2F2;
+    }
+    
+    /* Images top rounded edges */
+    #accommodations__marseille img, #activities img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin: 0 0 5px 0; /* Padding between images and h3 */
+    }
+    
+    /* "Hébergements à Marseille"'s description padding */ 
+    #accommodations__marseille h3, #accommodations__marseille .price, #accommodations__marseille .stars, #activities h3 {
+        padding: 0 10px;
+    }
+    
+    /* Remove the browser's default values */
+    #accommodations__marseille h3 {
+        margin: 0;  
+    }
+    
+    #accommodations__marseille .stars {
+        margin-top: 1px;
+    }
+    
+    /* Remove the browser's default values */
+    #accommodations__marseille i {
+        padding: 0; 
+    }
+    
+    .accommodations__marseille__more {
+        margin : 30px 0 0 0;
+        font-size: 18px;
+    }
+
 
 /* -------------------------- */
 /* Values for mobiles < 768px */
@@ -288,6 +390,60 @@
     .search__info {
         margin: 35px 0;
     }
+
+    /* ------------------------ */
+    /* Section 2 Accommodations */
+    /* ------------------------ */
+    /* Font-size of sections "Hébergements" and "Activities" */
+    #accommodations h2, #activities h2 {   
+        font-size: 22px;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    /* Les plus populaires */
+    /*-------------------- */
+    #accommodations__popular {
+        padding: 40px 20px 30px 20px;
+    }
+
+    .accommodations__popular__block {
+        height: 135px;
+    }
+
+    .accommodations__popular__title {
+        margin-bottom: 25px;
+    }
+
+    /*  "Les plus populaires"'s images dimensions */ 
+    #accommodations__popular img {
+        width: 126px;
+        height: 135px;
+    }
+
+    #accommodations__popular .price {
+        margin: 0 0 35px 0;
+    }    
+
+    /* Hébergements à Marseille */
+    /* ------------------------ */
+    #accommodations__marseille {
+        padding: 37px 20px 10px 20px;
+    }
+
+    /* "Hébergements à Marseille" block dimensions */
+    .accommodations__marseille__block {
+        height: 188px;
+        box-shadow: 0 0 20px #F2F2F2;
+        padding: 5px;
+    }
+
+    #accommodations__marseille img {
+        height: 115px;
+    }
 }
 
 
@@ -296,7 +452,7 @@
 /* Values for screens > 992px */
 /* -------------------------- */
 @media screen and (min-width: 992px) {
-    body {
+    body, h3 {
         font-size: 15px;
     }
 
@@ -371,7 +527,8 @@
     }
 
     /* Input position and size */
-    .search__bar__input {   
+    .search__bar__input {  
+        margin-right: 12px; 
         padding: 0 0 0 70px;
         height: 40px;
         width: 190px;
@@ -406,145 +563,86 @@
     .search__info {
         margin: 30px 0; /* Space between the filters and the information */
     }
+
+    /* ------------------------ */
+    /* Section 2 Accommodations */
+    /* ------------------------ */
+    #accommodations h2, #activities h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    #accommodations {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 40px;
+    }
+
+    #accommodations__popular, #accommodations__marseille {
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        padding: 37px 35px 0 35px;
+    }
+    
+    /* Les plus populaires */
+    /*-------------------- */
+    #accommodations__popular {
+        flex: 1;
+        margin-left: 45px;
+    }
+
+    .accommodations__popular__title {
+        margin-bottom: 16px;
+    }
+
+    .accommodations__popular__block {
+        margin-bottom: 25px;
+    }
+
+    .accommodations__popular__block, #accommodations__popular img {
+        height: 125px;
+    }
+
+    /*  "Les plus populaires"'s images dimensions and position */ 
+    #accommodations__popular img {
+        width: 126px;
+    }
+
+    
+    #accommodations__popular .price {
+        margin: 0 0 28px 0;
+    }
+    
+    /* Hébergements à Marseille */
+    /* ------------------------ */
+    #accommodations__marseille {
+        flex: 2.25; /* 2.25x bigger than "Les plus populaires" */
+    }
+
+    .marseille__blocks {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .accommodations__marseille__block {
+        background-color: #FFF;
+        border: 1px #FFF solid;
+        padding: 4px;
+        height: 165px;
+        box-shadow: 0 0 20px #D9D9D9;
+        margin-bottom: 15px;
+    }
+
+    #accommodations__marseille img {
+        height: 100px;
+        width: 210px;
+    }
 }
 
 
-
-
-/* Section 2 Accommodations */
-/* ------------------------ */
-/* Les plus populaires */
-/*-------------------- */
-.all-edges-rounded {
-    border-radius: 20px;
-}
-
-#accommodations__popular {
-    padding: 40px 20px 30px 20px;
-}
-
-div {
-    margin-bottom: 10px;
-}
-
-.accommodations__popular__title {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-}
-
-/* Font-size of sections "Hébergements" and "Activities" */
-#accommodations h2, #activities h2 {
-    margin: 0;
-    font-size: 22px;
-}
-
-.accommodations__popular__title i {
-    align-self: center; /* Align the icon with the h2 */
-}
-
-.accommodations__popular__block {
-    background-color: #FFF;
-    border: 1px #FFF solid;
-    padding: 4px;
-    height: 135px;
-    width: auto;
-}
-
-/* Fit the images inside the boxes */
-#accommodations__popular img, #accommodations__marseille img, #activities img {
-    object-fit: cover;
-}
-
-/*  "Les plus populaires"'s images dimensions and position */ 
-#accommodations__popular img {
-    width: 126px;
-    height: 135px;
-    float: left;
-    margin-right: 20px; /* Space between the text and the image */
-}
-
-h3 {
-    font-size: 17px;
-}
-
-#accommodations__popular h3 {
-    margin: 10px 0 7px 0;
-}
-
-#accommodations__popular .price {
-    font-size: 14px;
-    margin: 0 0 35px 0;
-}
-
-/* Hébergements à Marseille */
-/* ------------------------ */
-#accommodations__marseille {
-    padding: 37px 20px 10px 20px;
-}
-
-#accommodations__marseille h2 {
-    margin-bottom: 16px;
-}
-
-.accommodations__popular__block {
-    box-shadow: 0 0 20px #D9D9D9;  
-}
-
-.accommodations__marseille__block, #activities div {
-    box-shadow: 0 0 20px #F2F2F2;
-}
-
-#accommodations__marseille .price {
-    font-size: 14px;
-    margin: 3px 0 0 0;
-}
-
-/* "Hébergements à Marseille" block dimensions */
-.accommodations__marseille__block {
-    height: 188px;
-    padding: 5px; 
-    width: auto;
-}
-
-/* Images top rounded edges */
-#accommodations__marseille img, #activities img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    margin: 0 0 5px 0; /* Padding between images and h3 */
-}
-
-#accommodations__marseille img {
-    height: 115px;
-}
-
-/* "Hébergements à Marseille"'s description padding */ 
-#accommodations__marseille h3, #accommodations__marseille .price, #accommodations__marseille .stars, #activities h3 {
-    padding: 0 10px;
-}
-
-/* Remove the browser's default values */
-#accommodations__marseille h3 {
-    margin: 0;  
-}
-
-#accommodations__marseille .stars {
-    margin-top: 1px;
-}
-
-/* Remove the browser's default values */
-#accommodations__marseille i {
-    padding: 0; 
-}
-
-.empty-stars {
-    color: #F2F2F2;
-}
-
-.accommodations__marseille__more {
-    margin : 30px 0 0 0;
-    font-size: 18px;
-}
 
 /* Section 3 Activities */
 /* --------------------- */
