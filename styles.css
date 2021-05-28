@@ -69,6 +69,127 @@
         clear: left;
     }
 
+    /* ---------------- */
+    /* Section 1 Search */
+    /* ---------------- */
+    .search__bar {
+        border-radius: 15px;
+    }
+    
+    /* Search bar and Search filters position */
+    .search__bar, .search__filters li {
+        display: inline-flex;
+    }
+
+    /* Remove the browser's default values for input */
+    .search__bar__input {
+        outline: none;
+        border: none;
+    }
+
+    /* Font style of input and input's placeholder */
+    .search__bar__input::placeholder, input {
+        font-family: 'Raleway extrabold';
+        color: #000;
+    }
+
+    /* Icons' position */
+    .search__bar__map-marker, .search__bar__button, .search__filters i {
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+
+    .search__bar__map-marker, .search__filters i {
+        position: absolute;
+    }
+    
+    .search__bar__map-marker {
+        font-size: 14px;
+    }
+    
+    .search__bar__map-marker {
+        width: 52px;
+        margin-top: -1px;
+        margin-left: -2px;
+    }
+    
+    /* Button's color + position */
+    .search__bar__button {
+        background-color: #0065FC;
+        color: #FFF;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin-top: -1px;
+    }
+    
+    /* Button's icon size */
+    .search__bar__button i {
+        font-size: 17px;
+    }
+
+    /* Elements that take the entire width of the screen */
+    .full-width {
+        width: 100%;
+    }
+
+    /* Margin between the search bar and the h2 "Filtres" */
+    .search__filters h2 {
+        margin: 22px 0 0 0;
+    }
+
+    .search__filters li {
+        border: 2px #D9D9D9 solid; /* Filters borders -> darker grey */
+        align-items: center;
+        position: relative;
+    }
+
+    /* Filters icons size */
+    .search__filters i {
+        background-color: #DEEBFF;
+        margin-left: -3px;
+        width: 47px;
+        height: 47px;
+    }
+
+    .search__filters li:hover {
+        border: 2px #DEEBFF solid;
+        background-color: #DEEBFF;
+    }
+
+    /* Filters' name position */
+    .search__filters p {
+        padding: 0 15px 0 60px;
+        margin: 12px 0;
+    }
+
+    .search__filters li, .search__filters i, .search__info__icon {
+        border-radius: 30px;
+    }
+
+    .search__info {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    /* Information icon borders */
+    .search__info__icon {
+        border: 1px #D9D9D9 solid;
+        padding: 6px 9px; /* Dimension of the circle */
+        margin-right: 10px;
+        height: 10px; /* Correct the height modified by flexbox */
+    }
+    
+    .search__info i {
+        font-size: 11px; /* Size of the information icon */
+    }
+    
+    .search__info p {
+        width: 100%;
+        margin: 0; /* Remove the browser's default value */
+    }
+
 
 /* -------------------------- */
 /* Values for mobiles < 768px */
@@ -84,16 +205,16 @@
     /* ------ */
     /* Logo Reservia position */
     .logo {
-    width: 100px;
-    padding: 25px 20px;
+        width: 100px;
+        padding: 25px 20px;
     }
 
     /*Position of navigation's elements "Hébergements" and "Activités" */
     .navigation__accommodations, .navigation__activities { 
-    border-bottom: 3.5px #F2F2F2 solid;
-    width: 50%;
-    height: 35px;
-    text-align: center;
+        border-bottom: 3.5px #F2F2F2 solid;
+        width: 50%;
+        height: 35px;
+        text-align: center;
     }
 
     /* Underline the navigation's element "Hébergements" in blue for mobile version */
@@ -113,9 +234,62 @@
     /* ---------------- */
     /* Position of section 1 */
     #search {
-    padding: 10px 20px 0 20px;
+        padding: 10px 20px 0 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin: 18px 0 10px 0;
+    }
+
+    .search__bar {
+        width: 100%;
+    }
+
+    /* Search bar and Search filters position */
+    .search__bar, .search__filters li {
+        margin-top: 15px;
+    }
+
+    .search__bar__map-marker, .search__bar__button {
+        height: 52px;
+        font-size: 14px;
+    }
+    
+    /* Search bar button width, position and border-radius */
+    .search__bar__button {
+        border-radius: 15px;
+        width: 52px;
+        position: absolute; 
+        right: 19px;
+    }
+
+    /* Input position and size */
+    .search__bar__input {   
+        padding: 0 70px;
+        height: 50px;
+    }
+
+    /* Font size of input and input's placeholder */
+    .search__bar__input::placeholder, input {
+        font-size: 18px;
+    }
+
+    /* Hide button's text -> show the search icon */
+    .button_text {
+        display: none;
+    }
+
+    /* Space between the filters */
+    .search__filters li {
+        margin-right: 7px;
+    }
+
+    .search__info {
+        margin: 35px 0;
     }
 }
+
 
 
 /* -------------------------- */
@@ -133,7 +307,7 @@
     .logo {
         width: 90px;
         padding: 35px 0 0 45px;
-        }
+    }
 
     header {
         display: flex;
@@ -149,6 +323,10 @@
         padding: 38px 28px 0 28px;
     }
 
+    .navigation__activities, .navigation__sign-up {
+        border-top: 3.5px #FFF solid;
+    }
+
     /* Underline the navigation's element "Hébergements" in blue for mobile version */
     .navigation__accommodations {
         border-top: 3.5px #0065FC solid; 
@@ -160,139 +338,78 @@
     /* Position of section 1 */
     #search {
         padding: 15px 45px 0 45px;
-        }
+    }
+        
+    h1 {
+        font-size: 20px;
+        margin: 18px 0 5px 0;
+    }
+
+    .search__description {
+        margin: 0 0 6px 0;
+    }
+
+    .search__bar {
+        width: 380px;
+    }
+
+    /* Search bar and Search filters position */
+    .search__bar, .search__filters li {
+        margin-top: 10px;
+    }
+
+    .search__bar__map-marker, .search__bar__button {
+        height: 45px;
+    }
+
+    /* Search bar button width and border-radius */
+    .search__bar__button {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: 115px;
+        font-size: 16px;
+    }
+
+    /* Input position and size */
+    .search__bar__input {   
+        padding: 0 0 0 70px;
+        height: 40px;
+        width: 190px;
+    }
+
+    /* Font size of input and input's placeholder */
+    .search__bar__input::placeholder, input {
+        font-size: 16px;
+    }
+
+    /* Hide button's search icon -> show button text */
+    .search__bar__button i {
+        display: none;
+    }
+
+    .search__filters {
+        display: flex;
+        flex-direction: row;
+        margin-top: 12px; /* Space between the search bar and the filters */    
+    }
+
+    .search__filters h2{
+        font-size: 15px;
+        width: 80px; /* Create the space between the title "Filtres" and the list */
+    }
+    
+    /* Space between each items of the list */
+    .search__filters li {
+        margin-right: 20px;
+    }
+
+    .search__info {
+        margin: 30px 0; /* Space between the filters and the information */
+    }
 }
 
 
 
-h1 {
-    font-size: 22px;
-    margin: 18px 0 10px 0;
-}
-
-.search__bar, .search__bar__button {
-    border-radius: 15px;
-}
-
-/* Search bar and Search filters position */
-.search__bar, .search__filters li {
-    margin-top: 15px;
-    display: inline-flex;
-}
-
-/* Remove the browser's default values for input + position + size */
-.search__bar__input {
-    outline: none;
-    border: none;
-    padding: 0 70px;
-    height: 50px;
-}
-
-/* Font style of input and input's placeholder */
-.search__bar__input::placeholder, input {
-    font-family: 'Raleway extrabold';
-    color: #000;
-    font-size: 18px;
-}
-
-/* Icons' position */
-.search__bar__map-marker, .search__bar__button, .search__filters i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;    
-}
-
-/* Search bar icons size */
-.search__bar__map-marker, .search__bar__button {
-    width: 52px;
-    height: 52px;
-    font-size: 14px;
-}
-
-.search__bar__map-marker {
-    margin-top: -1px;
-    margin-left: -2px;
-}
-
-/* Button's color + position */
-.search__bar__button {
-    background-color: #0065FC;
-    color: #FFF;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    right: 19px;
-    margin-top: -1px;
-}
-
-/* Button's icon size */*
-.search__bar__button i {
-    font-size: 17px;
-}
-
-/* Elements that take the entire width of the screen */
-.full-width {
-    width: 100%;
-}
-
-/* Margin between the search bar and the h2 "Filtres" */
-.search__filters h2 {
-    margin: 22px 0 0 0;
-}
-
-.search__filters li {
-    border: 2px #D9D9D9 solid; /* Filters borders -> darker grey */
-    align-items: center;
-    position: relative;
-    margin-right: 7px;
-}
-
-/* Filters icons size */
-.search__filters i {
-    background-color: #DEEBFF;
-    margin-left: -3px;
-    width: 47px;
-    height: 47px;
-}
-
-.search__filters li:hover {
-    border: 2px #DEEBFF solid;
-    background-color: #DEEBFF;
-}
-
-/* Filters' name position */
-.search__filters p {
-    padding: 0 15px 0 60px;
-    margin: 12px 0;
-}
-
-.search__filters li, .search__filters i, .search__info__icon {
-    border-radius: 30px;
-}
-
-.search__info {
-    margin: 35px 0;
-    display: flex;
-    flex-direction: row;
-}
-
-/* Information icon borders */
-.search__info__icon {
-    border: 1px #D9D9D9 solid;
-    padding: 6px 9px; /* Dimension of the circle */
-    margin-right: 10px;
-    height: 10px; /* Correct the height modified by flexbox */
-}
-
-.search__info i {
-    font-size: 11px;
-}
-
-.search__info p {
-    width: 100%;
-    margin: 0; /* Remove the browser's default value */
-}
 
 /* Section 2 Accommodations */
 /* ------------------------ */
