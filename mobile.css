@@ -86,15 +86,6 @@
         display: none;
     }
 
-    /* Space between the filters */
-    .search__filters li {
-        margin-right: 7px;
-    }
-
-    .search__info {
-        margin: 35px 0;
-    }
-
     /* ------------------------ */
     /* Section 2 Accommodations */
     /* ------------------------ */

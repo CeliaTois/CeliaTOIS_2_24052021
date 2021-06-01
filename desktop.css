@@ -5,61 +5,24 @@
         font-size: 15px;
     }
 
+    /* ------ */
+    /* Header */
+    /* ------ */
+    /* Logo Reservia position */
+    #logo {
+        padding: 35px 0 0 45px;
+    }
+    
+    nav {
+        padding-right: 24px;
+    }
 
     /* ---------------- */
     /* Section 1 Search */
-    /* ---------------- */
+    /* ---------------- */ 
     /* Position of section 1 */
     #search {
         padding: 15px 45px 0 45px;
-    }
-        
-    h1 {
-        font-size: 20px;
-        margin: 18px 0 5px 0;
-    }
-
-    .search__description {
-        margin: 0 0 6px 0;
-    }
-
-    .search__bar {
-        width: 380px;
-    }
-
-    /* Search bar and Search filters position */
-    .search__bar, .search__filters li {
-        margin-top: 10px;
-    }
-
-    .search__bar__map-marker, .search__bar__button {
-        height: 45px;
-    }
-
-    /* Search bar button width and border-radius */
-    .search__bar__button {
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        width: 115px;
-        font-size: 16px;
-    }
-
-    /* Input position and size */
-    .search__bar__input {  
-        margin-right: 12px; 
-        padding: 0 0 0 70px;
-        height: 40px;
-        width: 190px;
-    }
-
-    /* Font size of input and input's placeholder */
-    .search__bar__input::placeholder, input {
-        font-size: 16px;
-    }
-
-    /* Hide button's search icon -> show button text */
-    .search__bar__button i {
-        display: none;
     }
 
     .search__filters {

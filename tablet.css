@@ -1,3 +1,75 @@
 /* -------------------------------------- */
 /* Values for tablets > 768px and < 991px */
 /* -------------------------------------- */
+    body, h3 {
+        font-size: 15px;
+    }
+
+    /* ------ */
+    /* Header */
+    /* ------ */
+    /* Logo Reservia position */
+    #logo {
+        padding: 30px 0 0 30px;
+    }
+    
+    nav {
+        padding-right: 19px;
+    }
+
+    /* ---------------- */
+    /* Section 1 Search */
+    /* ---------------- */
+    /* Position of section 1 */
+    #search {
+        padding: 15px 30px 0 30px;
+    }
+
+    .search__filters h2 {
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+
+    /* ------------------------ */
+    /* Section 2 Accommodations */
+    /* ------------------------ */
+    #accommodations {
+        padding: 0 30px;
+    }
+
+    #accommodations h2, #activities h2{
+        font-size: 18px;
+    }
+
+    /* Les plus populaires */
+    /*-------------------- */
+    #accommodations__popular {
+        flex: 1;
+        border-radius: 20px;
+        padding: 10px 15px;
+    }
+
+    /*  "Les plus populaires"'s images dimensions and position */ 
+    #accommodations__popular img {
+        width: 90px;
+        height: 110px;
+    }
+
+    /* Hébergements à Marseille */
+    /* ------------------------ */
+    #accommodations__marseille {
+        flex: 1.70; /* 2x bigger than "Les plus populaires" */
+    }
+
+    #accommodations__marseille img {
+        height: 100px;
+        width: 100%;
+    }
+
+    .accommodations__marseille__block {
+        height: 165px;
+        width: 35%;
+    }
+
+    .marseille__blocks {
+    }

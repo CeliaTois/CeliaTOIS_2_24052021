@@ -296,6 +296,21 @@
     }
 
 
+/* -------------------------------------- */
+/* Values for tablets and mobiles < 991px */
+/* -------------------------------------- */
+@media screen and (max-width: 991px) {
+     /* Space between the filters */
+     .search__filters li {
+        margin-right: 7px;
+    }
+
+    .search__info {
+        margin: 35px 0;
+    }
+}
+
+
 
 /* -------------------------------------- */
 /* Values for desktop and tablets > 768px */
@@ -304,19 +319,13 @@
         /* ------ */
         /* Header */
         /* ------ */
-        /* Logo Reservia position */
         #logo {
             width: 90px;
-            padding: 35px 0 0 45px;
         }
 
         header {
             display: flex;
             justify-content: space-between;
-        }
-    
-        nav {
-            padding-right: 24px;
         }
 
         /*Position of navigation's elements "Hébergements" and "Activités" */
@@ -331,6 +340,75 @@
         /* Underline the navigation's element "Hébergements" in blue for mobile version */
         #navigation__accommodations {
             border-top: 3.5px #0065FC solid; 
+        }
+
+        
+        /* ---------------- */
+        /* Section 1 Search */
+        /* ---------------- */            
+        h1 {
+            font-size: 20px;
+            margin: 18px 0 5px 0;
+        }
+    
+        .search__description {
+            margin: 0 0 6px 0;
+        }
+    
+        .search__bar {
+            width: 380px;
+        }
+
+        /* Search bar and Search filters position */
+        .search__bar, .search__filters li {
+            margin-top: 10px;
+        }
+
+        .search__bar__map-marker, .search__bar__button {
+            height: 45px;
+        }
+
+        /* Search bar button width and border-radius */
+        .search__bar__button {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            width: 115px;
+            font-size: 16px;
+        }
+
+        /* Input position and size */
+        .search__bar__input {  
+            margin-right: 12px; 
+            padding: 0 0 0 70px;
+            height: 40px;
+            width: 190px;
+        }
+
+        /* Font size of input and input's placeholder */
+        .search__bar__input::placeholder, input {
+            font-size: 16px;
+        }
+
+        /* Hide button's search icon -> show button text */
+        .search__bar__button i {
+            display: none;
+        }
+
+
+        /* ------------------------ */
+        /* Section 2 Accommodations */
+        /* ------------------------ */
+        #accommodations {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .marseille__blocks {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 10px;
         }
     }
 
