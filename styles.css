@@ -62,7 +62,7 @@
     /* Header */
     /* ------ */
     /* Logo Reservia position */
-    .logo { 
+    #logo { 
         float: left;
     }
 
@@ -157,9 +157,15 @@
         height: 47px;
     }
 
-    .search__filters li:hover {
-        border: 2px #DEEBFF solid;
-        background-color: #DEEBFF;
+    .search__filters>ul>li:hover {
+        border: 2px #0065FC solid;
+        color: #0065FC;
+        cursor: pointer;
+    }
+    
+    .search__filters>ul>li:hover>i {
+        background-color: #0065FC;
+        color: #DEEBFF;
     }
 
     /* Filters' name position */
@@ -242,9 +248,6 @@
 
     /* Hébergements à Marseille */
     /* ------------------------ */
-    .accommodations__marseille__block { /* "Hébergements à Marseille" block dimensions */ 
-        width: auto;
-    }
     #accommodations__marseille .price, .accommodations__popular .price {
         font-size: 14px;
     }
@@ -253,8 +256,8 @@
         margin: 3px 0 0 0;
     }
 
-    #accommodations__marseille h2 {
-        margin-bottom: 16px;
+    #accommodations__marseille h2, #activties h2 {
+        margin: 0 0 15px 0;
     }
     
     #activities div {
@@ -293,354 +296,46 @@
     }
 
 
-/* -------------------------- */
-/* Values for mobiles < 768px */
-/* -------------------------- */
 
-@media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
+/* -------------------------------------- */
+/* Values for desktop and tablets > 768px */
+/* -------------------------------------- */
+    @media screen and (min-width: 768px) {
+        /* ------ */
+        /* Header */
+        /* ------ */
+        /* Logo Reservia position */
+        #logo {
+            width: 90px;
+            padding: 35px 0 0 45px;
+        }
 
-    /* ------ */
-    /* Header */
-    /* ------ */
-    /* Logo Reservia position */
-    .logo {
-        width: 100px;
-        padding: 25px 20px;
-    }
-
-    /*Position of navigation's elements "Hébergements" and "Activités" */
-    .navigation__accommodations, .navigation__activities { 
-        border-bottom: 3.5px #F2F2F2 solid;
-        width: 50%;
-        height: 35px;
-        text-align: center;
-    }
-
-    /* Underline the navigation's element "Hébergements" in blue for mobile version */
-    .navigation__accommodations {
-        border-bottom: 3.5px #0065FC solid; 
-    }
-
-    /* Position of "S'inscrire" */
-    .navigation__sign-up { 
-        position: absolute;
-        top: 39px;
-        right: 20px;
-    }
-
-    /* ---------------- */
-    /* Section 1 Search */
-    /* ---------------- */
-    /* Position of section 1 */
-    #search {
-        padding: 10px 20px 0 20px;
-    }
-
-    h1 {
-        font-size: 22px;
-        margin: 18px 0 10px 0;
-    }
-
-    .search__bar {
-        width: 100%;
-    }
-
-    /* Search bar and Search filters position */
-    .search__bar, .search__filters li {
-        margin-top: 15px;
-    }
-
-    .search__bar__map-marker, .search__bar__button {
-        height: 52px;
-        font-size: 14px;
-    }
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
     
-    /* Search bar button width, position and border-radius */
-    .search__bar__button {
-        border-radius: 15px;
-        width: 52px;
-        position: absolute; 
-        right: 19px;
-    }
+        nav {
+            padding-right: 24px;
+        }
 
-    /* Input position and size */
-    .search__bar__input {   
-        padding: 0 70px;
-        height: 50px;
-    }
-
-    /* Font size of input and input's placeholder */
-    .search__bar__input::placeholder, input {
-        font-size: 18px;
-    }
-
-    /* Hide button's text -> show the search icon */
-    .button_text {
-        display: none;
-    }
-
-    /* Space between the filters */
-    .search__filters li {
-        margin-right: 7px;
-    }
-
-    .search__info {
-        margin: 35px 0;
-    }
-
-    /* ------------------------ */
-    /* Section 2 Accommodations */
-    /* ------------------------ */
-    /* Font-size of sections "Hébergements" and "Activities" */
-    #accommodations h2, #activities h2 {   
-        font-size: 22px;
-        margin: 0;
-    }
-
-    h3 {
-        font-size: 17px;
-    }
-
-    /* Les plus populaires */
-    /*-------------------- */
-    #accommodations__popular {
-        padding: 40px 20px 30px 20px;
-    }
-
-    .accommodations__popular__block {
-        height: 135px;
-    }
-
-    .accommodations__popular__title {
-        margin-bottom: 25px;
-    }
-
-    /*  "Les plus populaires"'s images dimensions */ 
-    #accommodations__popular img {
-        width: 126px;
-        height: 135px;
-    }
-
-    #accommodations__popular .price {
-        margin: 0 0 35px 0;
-    }    
-
-    /* Hébergements à Marseille */
-    /* ------------------------ */
-    #accommodations__marseille {
-        padding: 37px 20px 10px 20px;
-    }
-
-    /* "Hébergements à Marseille" block dimensions */
-    .accommodations__marseille__block {
-        height: 188px;
-        box-shadow: 0 0 20px #F2F2F2;
-        padding: 5px;
-    }
-
-    #accommodations__marseille img {
-        height: 115px;
-    }
-}
-
-
-
-/* -------------------------- */
-/* Values for screens > 992px */
-/* -------------------------- */
-@media screen and (min-width: 992px) {
-    body, h3 {
-        font-size: 15px;
-    }
-
-    /* ------ */
-    /* Header */
-    /* ------ */
-    /* Logo Reservia position */
-    .logo {
-        width: 90px;
-        padding: 35px 0 0 45px;
-    }
-
-    header {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    nav {
-        padding-right: 24px;
-    }
-
-    /*Position of navigation's elements "Hébergements" and "Activités" */
-    #navigation li{ 
-        padding: 38px 28px 0 28px;
-    }
-
-    .navigation__activities, .navigation__sign-up {
-        border-top: 3.5px #FFF solid;
-    }
-
-    /* Underline the navigation's element "Hébergements" in blue for mobile version */
-    .navigation__accommodations {
-        border-top: 3.5px #0065FC solid; 
-    }
-
-    /* ---------------- */
-    /* Section 1 Search */
-    /* ---------------- */
-    /* Position of section 1 */
-    #search {
-        padding: 15px 45px 0 45px;
-    }
-        
-    h1 {
-        font-size: 20px;
-        margin: 18px 0 5px 0;
-    }
-
-    .search__description {
-        margin: 0 0 6px 0;
-    }
-
-    .search__bar {
-        width: 380px;
-    }
-
-    /* Search bar and Search filters position */
-    .search__bar, .search__filters li {
-        margin-top: 10px;
-    }
-
-    .search__bar__map-marker, .search__bar__button {
-        height: 45px;
-    }
-
-    /* Search bar button width and border-radius */
-    .search__bar__button {
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        width: 115px;
-        font-size: 16px;
-    }
-
-    /* Input position and size */
-    .search__bar__input {  
-        margin-right: 12px; 
-        padding: 0 0 0 70px;
-        height: 40px;
-        width: 190px;
-    }
-
-    /* Font size of input and input's placeholder */
-    .search__bar__input::placeholder, input {
-        font-size: 16px;
-    }
-
-    /* Hide button's search icon -> show button text */
-    .search__bar__button i {
-        display: none;
-    }
-
-    .search__filters {
-        display: flex;
-        flex-direction: row;
-        margin-top: 12px; /* Space between the search bar and the filters */    
-    }
-
-    .search__filters h2{
-        font-size: 15px;
-        width: 80px; /* Create the space between the title "Filtres" and the list */
-    }
+        /*Position of navigation's elements "Hébergements" and "Activités" */
+        #navigation li{ 
+            padding: 38px 28px 0 28px;
+        }
     
-    /* Space between each items of the list */
-    .search__filters li {
-        margin-right: 20px;
-    }
-
-    .search__info {
-        margin: 30px 0; /* Space between the filters and the information */
-    }
-
-    /* ------------------------ */
-    /* Section 2 Accommodations */
-    /* ------------------------ */
-    #accommodations h2, #activities h2 {
-        font-size: 20px;
-        margin: 0;
-    }
-
-    #accommodations {
-        display: flex;
-        flex-direction: row-reverse;
-        padding: 0 40px;
-    }
-
-    #accommodations__popular, #accommodations__marseille {
-        border-radius: 20px;
-        background-color: #F2F2F2;
-        padding: 37px 35px 0 35px;
-    }
+        #navigation__activities, #navigation__sign-up {
+            border-top: 3.5px #FFF solid;
+        }
     
-    /* Les plus populaires */
-    /*-------------------- */
-    #accommodations__popular {
-        flex: 1;
-        margin-left: 45px;
+        /* Underline the navigation's element "Hébergements" in blue for mobile version */
+        #navigation__accommodations {
+            border-top: 3.5px #0065FC solid; 
+        }
     }
 
-    .accommodations__popular__title {
-        margin-bottom: 16px;
-    }
 
-    .accommodations__popular__block {
-        margin-bottom: 25px;
-    }
 
-    .accommodations__popular__block, #accommodations__popular img {
-        height: 125px;
-    }
-
-    /*  "Les plus populaires"'s images dimensions and position */ 
-    #accommodations__popular img {
-        width: 126px;
-    }
-
-    
-    #accommodations__popular .price {
-        margin: 0 0 28px 0;
-    }
-    
-    /* Hébergements à Marseille */
-    /* ------------------------ */
-    #accommodations__marseille {
-        flex: 2.25; /* 2.25x bigger than "Les plus populaires" */
-    }
-
-    .marseille__blocks {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 10px;
-    }
-
-    .accommodations__marseille__block {
-        background-color: #FFF;
-        border: 1px #FFF solid;
-        padding: 4px;
-        height: 165px;
-        box-shadow: 0 0 20px #D9D9D9;
-        margin-bottom: 15px;
-    }
-
-    #accommodations__marseille img {
-        height: 100px;
-        width: 210px;
-    }
-}
 
 
 

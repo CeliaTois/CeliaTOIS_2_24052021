@@ -1,0 +1,163 @@
+/* -------------------------- */
+/* Values for screens > 992px */
+/* -------------------------- */
+    body, h3 {
+        font-size: 15px;
+    }
+
+
+    /* ---------------- */
+    /* Section 1 Search */
+    /* ---------------- */
+    /* Position of section 1 */
+    #search {
+        padding: 15px 45px 0 45px;
+    }
+        
+    h1 {
+        font-size: 20px;
+        margin: 18px 0 5px 0;
+    }
+
+    .search__description {
+        margin: 0 0 6px 0;
+    }
+
+    .search__bar {
+        width: 380px;
+    }
+
+    /* Search bar and Search filters position */
+    .search__bar, .search__filters li {
+        margin-top: 10px;
+    }
+
+    .search__bar__map-marker, .search__bar__button {
+        height: 45px;
+    }
+
+    /* Search bar button width and border-radius */
+    .search__bar__button {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: 115px;
+        font-size: 16px;
+    }
+
+    /* Input position and size */
+    .search__bar__input {  
+        margin-right: 12px; 
+        padding: 0 0 0 70px;
+        height: 40px;
+        width: 190px;
+    }
+
+    /* Font size of input and input's placeholder */
+    .search__bar__input::placeholder, input {
+        font-size: 16px;
+    }
+
+    /* Hide button's search icon -> show button text */
+    .search__bar__button i {
+        display: none;
+    }
+
+    .search__filters {
+        display: flex;
+        flex-direction: row;
+        margin-top: 12px; /* Space between the search bar and the filters */    
+    }
+
+    .search__filters h2{
+        font-size: 15px;
+        width: 80px; /* Create the space between the title "Filtres" and the list */
+    }
+    
+    /* Space between each items of the list */
+    .search__filters li {
+        margin-right: 20px;
+    }
+
+    .search__info {
+        margin: 30px 0; /* Space between the filters and the information */
+    }
+
+    /* ------------------------ */
+    /* Section 2 Accommodations */
+    /* ------------------------ */
+    #accommodations__popular h2 {
+        margin: 0;
+    }
+
+    #accommodations h2, #activities h2{
+        font-size: 20px;
+    }
+
+    #accommodations {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 40px;
+    }
+
+    #accommodations__popular, #accommodations__marseille {
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        padding: 37px 35px 0 35px;
+    }
+    
+    /* Les plus populaires */
+    /*-------------------- */
+    #accommodations__popular {
+        flex: 1;
+        margin-left: 45px;
+    }
+
+    .accommodations__popular__title {
+        margin-bottom: 16px;
+    }
+
+    .accommodations__popular__block {
+        margin-bottom: 25px;
+    }
+
+    .accommodations__popular__block, #accommodations__popular img {
+        height: 125px;
+    }
+
+    /*  "Les plus populaires"'s images dimensions and position */ 
+    #accommodations__popular img {
+        width: 126px;
+    }
+
+    
+    #accommodations__popular .price {
+        margin: 0 0 28px 0;
+    }
+    
+    /* Hébergements à Marseille */
+    /* ------------------------ */
+    #accommodations__marseille {
+        flex: 2.25; /* 2.25x bigger than "Les plus populaires" */
+    }
+
+    .marseille__blocks {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .accommodations__marseille__block {
+        background-color: #FFF;
+        border: 1px #FFF solid;
+        padding: 4px;
+        height: 165px;
+        box-shadow: 0 0 20px #D9D9D9;
+        margin-bottom: 15px;
+    }
+
+    #accommodations__marseille img {
+        height: 100px;
+        width: 210px;
+    }

@@ -1,0 +1,155 @@
+/* -------------------------- */
+/* Values for mobiles < 767px */
+/* -------------------------- */
+
+    body {
+        font-size: 16px;
+    }
+
+    /* ------ */
+    /* Header */
+    /* ------ */
+    /* Logo Reservia position */
+    #logo {
+        width: 100px;
+        padding: 25px 20px;
+    }
+
+    /*Position of navigation's elements "Hébergements" and "Activités" */
+    #navigation__accommodations, #navigation__activities { 
+        border-bottom: 3.5px #F2F2F2 solid;
+        width: 50%;
+        height: 35px;
+        text-align: center;
+    }
+
+    /* Underline the navigation's element "Hébergements" in blue for mobile version */
+    #navigation__accommodations {
+        border-bottom: 3.5px #0065FC solid; 
+    }
+
+    /* Position of "S'inscrire" */
+    #navigation__sign-up { 
+        position: absolute;
+        top: 39px;
+        right: 20px;
+    }
+
+    /* ---------------- */
+    /* Section 1 Search */
+    /* ---------------- */
+    /* Position of section 1 */
+    #search {
+        padding: 10px 20px 0 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin: 18px 0 10px 0;
+    }
+
+    .search__bar {
+        width: 100%;
+    }
+
+    /* Search bar and Search filters position */
+    .search__bar, .search__filters li {
+        margin-top: 15px;
+    }
+
+    .search__bar__map-marker, .search__bar__button {
+        height: 52px;
+        font-size: 14px;
+    }
+    
+    /* Search bar button width, position and border-radius */
+    .search__bar__button {
+        border-radius: 15px;
+        width: 52px;
+        position: absolute; 
+        right: 19px;
+    }
+
+    /* Input position and size */
+    .search__bar__input {   
+        padding: 0 70px;
+        height: 50px;
+    }
+
+    /* Font size of input and input's placeholder */
+    .search__bar__input::placeholder, input {
+        font-size: 18px;
+    }
+
+    /* Hide button's text -> show the search icon */
+    .button_text {
+        display: none;
+    }
+
+    /* Space between the filters */
+    .search__filters li {
+        margin-right: 7px;
+    }
+
+    .search__info {
+        margin: 35px 0;
+    }
+
+    /* ------------------------ */
+    /* Section 2 Accommodations */
+    /* ------------------------ */
+    /* Font-size of sections "Hébergements" and "Activities" */
+    #accommodations h2, #activities h2{    
+        font-size: 22px;
+    }
+
+    #accommodations__popular h2 {   
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    /* Les plus populaires */
+    /*-------------------- */
+    #accommodations__popular {
+        padding: 40px 20px 30px 20px;
+    }
+
+    .accommodations__popular__block {
+        height: 135px;
+    }
+
+    .accommodations__popular__title {
+        margin-bottom: 25px;
+    }
+
+    /*  "Les plus populaires"'s images dimensions */ 
+    #accommodations__popular img {
+        width: 126px;
+        height: 135px;
+    }
+
+    #accommodations__popular .price {
+        margin: 0 0 35px 0;
+    }    
+
+    /* Hébergements à Marseille */
+    /* ------------------------ */
+    #accommodations__marseille {
+        padding: 37px 20px 10px 20px;
+    }
+
+    /* "Hébergements à Marseille" block dimensions */
+    .accommodations__marseille__block {
+        height: 188px;
+        width: auto;
+        box-shadow: 0 0 20px #F2F2F2;
+        padding: 5px;
+    }
+
+    #accommodations__marseille img {
+        height: 115px;
+    }
+
