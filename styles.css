@@ -241,10 +241,6 @@
         object-fit: cover;
     }
     
-    #accommodations__popular h3 {
-        margin: 10px 0 7px 0;
-    }
-    
 
     /* Hébergements à Marseille */
     /* ------------------------ */
@@ -254,14 +250,6 @@
 
     #accommodations__marseille .price{
         margin: 3px 0 0 0;
-    }
-
-    #accommodations__marseille h2, #activties h2 {
-        margin: 0 0 15px 0;
-    }
-    
-    #activities div {
-        box-shadow: 0 0 20px #F2F2F2;
     }
     
     /* Images top rounded edges */
@@ -289,15 +277,14 @@
     #accommodations__marseille i {
         padding: 0; 
     }
-    
-    .accommodations__marseille__more {
-        margin : 30px 0 0 0;
-        font-size: 18px;
+
+    .activities__blocks__marseille {
+        box-shadow: 0 0 20px #F2F2F2;
     }
 
 
 /* -------------------------------------- */
-/* Values for tablets and mobiles < 991px */
+/* Values for mobiles and tablets < 991px */
 /* -------------------------------------- */
 @media screen and (max-width: 991px) {
      /* Space between the filters */
@@ -313,7 +300,7 @@
 
 
 /* -------------------------------------- */
-/* Values for desktop and tablets > 768px */
+/* Values for tablets and desktop > 768px */
 /* -------------------------------------- */
     @media screen and (min-width: 768px) {
         /* ------ */
@@ -398,9 +385,8 @@
         /* ------------------------ */
         /* Section 2 Accommodations */
         /* ------------------------ */
-        #accommodations {
-            display: flex;
-            flex-direction: row-reverse;
+        #accommodations h2, #activities h2{
+            font-size: 20px;
         }
 
         .marseille__blocks {
@@ -409,6 +395,14 @@
             flex-wrap: wrap;
             justify-content: space-between;
             margin-bottom: 10px;
+        }
+
+        .accommodations__marseille__block {
+            background-color: #FFF;
+            border: 1px #FFF solid;
+            padding: 4px;
+            height: 165px;
+            box-shadow: 0 0 20px #D9D9D9;
         }
     }
 
@@ -419,9 +413,7 @@
 
 /* Section 3 Activities */
 /* --------------------- */
-#activities {
-    padding: 40px 20px 20px 20px;
-}
+
 
 #activities h2 {
     margin-bottom: 26px;
@@ -429,12 +421,6 @@
 
 #activities img {
     height: 135px;
-}
-
-#activities div {
-    height: 190px;
-    width: auto;
-    margin-bottom: 25px;
 }
 
 #activities h3 {
