@@ -48,14 +48,17 @@
 
     /*  "Les plus populaires"'s images dimensions and position */ 
     #accommodations__popular img {
-        width: 77px;
+        width: 34%;
         height: 110px;
         margin-right: 10px;
     }
 
     .accommodations__popular__block {
-        width: 220px;
         height: 110px;
+    }
+    
+    #accommodations__popular__marseille a {
+        width: 31.5%;
     }
 
     #accommodations__popular h3 {
@@ -77,13 +80,7 @@
         margin-bottom: 25px;
     }
 
-    #accommodations__marseille img {
-        height: 100px;
-        width: 100%;
-    }
-
     .accommodations__marseille__block {
-        width: 215px;
         margin-bottom: 20px;
     }
 
@@ -108,12 +105,18 @@
         margin-bottom: 10px;
     }
 
+    #activities__blocks a {
+        width: 48%;
+    }
+
     .activities__blocks__marseille {
         height: 190px;
-        width: 350px;
         margin-bottom: 25px;
     }
 
+    #activities img {
+        height: 135px;
+    }
 
     /* -------*/
     /* Footer */
