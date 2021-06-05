@@ -210,7 +210,7 @@
         border: 1px #FFF solid;
         padding: 4px;
         width: auto;
-        box-shadow: 0 0 20px #D9D9D9;
+        box-shadow: 3px 3px 15px #D9D9D9;
     }
 
     /*  "Les plus populaires"'s images position */ 
@@ -279,14 +279,14 @@
     }
 
     .activities__blocks__marseille {
-        box-shadow: 0 0 20px #F2F2F2;
+        box-shadow: 3px 3px 15px #D9D9D9;
     }
 
 
 /* -------------------------------------- */
-/* Values for mobiles and tablets < 991px */
+/* Values for mobiles and tablets < 1024px */
 /* -------------------------------------- */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
      /* Space between the filters */
      .search__filters li {
         margin-right: 7px;
@@ -406,7 +406,7 @@
             border: 1px #FFF solid;
             padding: 4px;
             height: 165px;
-            box-shadow: 0 0 20px #D9D9D9;
+            box-shadow: 3px 3px 15px #D9D9D9;
         }
 
         #accommodations__marseille img {
