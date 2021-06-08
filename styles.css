@@ -8,8 +8,8 @@
     }
 
     @font-face {
-        font-family: 'Raleway extrabold';
-        src: url('fonts/Raleway-ExtraBold.ttf');
+        font-family: 'Raleway bold';
+        src: url('fonts/Raleway-Bold.ttf');
     }
 
     body {
@@ -32,7 +32,7 @@
 
     /* Raleway bold */
     .font-bold { 
-        font-family: 'Raleway extrabold';
+        font-family: 'Raleway bold';
     }
 
     .blue { 
@@ -93,7 +93,7 @@
 
     /* Font style of input and input's placeholder */
     .search__bar__input::placeholder, input {
-        font-family: 'Raleway extrabold';
+        font-family: 'Raleway bold';
         color: #000;
     }
 
