@@ -86,6 +86,10 @@
         display: none;
     }
 
+    .search__filters h2{
+        font-size: 18px;
+    }
+
     /* ------------------------ */
     /* Section 2 Accommodations */
     /* ------------------------ */
