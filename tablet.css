@@ -67,6 +67,13 @@
     .accommodations__popular__block .price {
         margin: 2px 0 7px 0;
     }
+
+    .accommodations__popular__block .rate {
+        margin-bottom: 0;
+        position: absolute;
+        bottom: 10px;
+        left: 39%;
+    }
     
 
     /* Hébergements à Marseille */
