@@ -26,7 +26,7 @@
     /* Remove the browser's default values for lists */
     ul { 
         list-style-type: none;
-        padding-inline-start: 0;
+        padding: 0;
         margin: 0;
     }
 
@@ -244,6 +244,7 @@
     /* Fit the images inside the boxes */
     #accommodations__popular img, #accommodations__marseille img, #activities img {
         object-fit: cover;
+        object-position: center;
     }
     
 
