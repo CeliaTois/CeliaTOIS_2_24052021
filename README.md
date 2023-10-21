@@ -8,7 +8,5 @@ Reservia is a non-functionnal web page. The goal of this project was to reproduc
   ```
 - To run the project, open the HTML file in your web browser.
 
-
-| Reservia |
-|-|
-|![reservia](https://github.com/celia-tois/reservia/assets/90208365/4052e5ed-61f8-4dd3-8d40-adfc3b88b3a7)|
+## Project
+![reservia](https://github.com/celia-tois/reservia/assets/90208365/4052e5ed-61f8-4dd3-8d40-adfc3b88b3a7)
